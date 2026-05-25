@@ -128,12 +128,9 @@ fun HomeScreen(
                 ActionGroup(state = state, onClick = onOpenDefaultsSettings)
             }
 
-            Spacer(Modifier.height(16.dp))
+            Spacer(Modifier.height(32.dp))
 
-            TestCard(
-                emphasised = state == DefaultsState.Unknown,
-                onSubmit = onTestUrl,
-            )
+            TestCard(onSubmit = onTestUrl)
 
             Spacer(Modifier.height(12.dp))
         }
@@ -336,7 +333,7 @@ private fun FilledStatusButton(
 // prominent when state == Unknown, since that's the only way to verify.
 
 @Composable
-private fun TestCard(emphasised: Boolean, onSubmit: (String) -> Unit) {
+private fun TestCard(onSubmit: (String) -> Unit) {
     var text by remember { mutableStateOf("") }
     val keyboard = LocalSoftwareKeyboardController.current
 
@@ -350,25 +347,10 @@ private fun TestCard(emphasised: Boolean, onSubmit: (String) -> Unit) {
         ) {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Text(
-                    text = stringResource(
-                        if (emphasised) {
-                            R.string.home_test_label_manual
-                        } else {
-                            R.string.home_test_label
-                        }
-                    ),
+                    text = stringResource(R.string.home_test_label),
                     style = MaterialTheme.typography.labelLarge,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
-                if (emphasised) {
-                    Spacer(Modifier.size(8.dp))
-                    Text(
-                        text = stringResource(R.string.home_test_hint_unknown),
-                        style = MaterialTheme.typography.labelMedium,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        fontStyle = FontStyle.Italic,
-                    )
-                }
             }
             Row(
                 modifier = Modifier.fillMaxWidth(),

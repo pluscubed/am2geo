@@ -22,8 +22,14 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
+    <!--
+      Fill is the in-app Cream paper tone (#F3EDE0), not pure white. The
+      warmth keeps the mark in the same world as the in-app surface and
+      reads as a hand-stamped pin rather than a glaring white sticker on
+      the moss field.
+    -->
     <path
-        android:fillColor="#FFFFFF"
+        android:fillColor="#F3EDE0"
         android:fillType="evenOdd"
         android:pathData="M54,80 L68.72,54.5 A17,17 0 1 0 39.28,54.5 L54,80 Z M44,44 L58,44 L58,40 L64,46 L58,52 L58,48 L44,48 Z" />
 </vector>

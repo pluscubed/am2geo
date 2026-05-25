@@ -31,7 +31,7 @@ object DefaultsChecker {
     private val REQUIRED_HOSTS = setOf("maps.apple.com", "maps.apple")
 
     fun check(context: Context): DefaultsState {
-        // if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S)
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S)
             return DefaultsState.Unknown
 
         val manager = context.getSystemService(DomainVerificationManager::class.java)

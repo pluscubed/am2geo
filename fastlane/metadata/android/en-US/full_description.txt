@@ -1,0 +1,9 @@
+When you open an Apple Maps link, redirect it to your default maps app (such as Google Maps)
+
+Features:
+- Supports all Apple Maps links, including short-links
+- Preserve places, coordinates, searches, and directions
+- Keep using your preferred maps app on Android
+- No ads, accounts, analytics, or tracking SDKs
+
+Mapple is an independent utility. It is not affiliated with, endorsed by, or sponsored by Apple Inc. or Google LLC. Apple Maps is a trademark of Apple Inc. Google Maps is a trademark of Google LLC.

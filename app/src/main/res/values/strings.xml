@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Mapple</string>
+    <string name="redirect_label">Open in maps</string>
+
+    <!-- Status hero -->
+    <string name="status_headline_configured">Ready.</string>
+    <string name="status_sub_configured">Apple Maps links open in your maps app.</string>
+
+    <string name="status_headline_not_configured">Not yet.</string>
+    <string name="status_sub_not_configured">Open Android settings, then turn on both web addresses below for Mapple.</string>
+    <string name="status_caption_not_configured">Look for "Open by default," "Supported links," or "Set as default," depending on your phone.</string>
+
+    <string name="status_headline_unknown">Manual setup.</string>
+    <string name="status_sub_unknown">Open Android settings, then turn on both web addresses for Mapple.</string>
+    <string name="status_caption_manual">Look for "Open by default," "Supported links," or "Set as default," depending on your phone.</string>
+
+    <!-- Domain row tags -->
+    <string name="status_on">ON</string>
+    <string name="status_off">OFF</string>
+    <string name="status_manual_short">MANUAL</string>
+
+    <!-- Action row -->
+    <string name="action_manage">Manage in settings</string>
+    <string name="action_enable">Open settings</string>
+
+    <!-- Test strip -->
+    <string name="home_test_label">Test a link</string>
+    <string name="home_test_label_manual">Confirm setup</string>
+    <string name="home_test_hint">paste a maps.apple.com link</string>
+    <string name="home_test_hint_unknown">make sure it opens correctly</string>
+    <string name="home_test_button">Open link</string>
+    <string name="home_test_empty">Paste a link first.</string>
+
+    <!-- Misc -->
+    <string name="home_settings_unavailable">Couldn\'t open settings on this device.</string>
+    <string name="redirect_failed">Couldn\'t open that link.</string>
+</resources>

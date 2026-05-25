@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Themed-icon (monochrome) layer, used by Android 13+ when the user enables
+  the "Themed icons" toggle. The system tints this layer with the wallpaper-
+  derived accent colour and composites it on a matching background tint, so
+  the whole layer must be a single flat silhouette on transparent — no
+  fills, no strokes, no second colour.
+
+  Geometry is the same pin-with-arrow as ic_launcher_foreground.xml so the
+  themed and untinted icons feel like one mark.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M54,80 L68.72,54.5 A17,17 0 1 0 39.28,54.5 L54,80 Z M44,44 L58,44 L58,40 L64,46 L58,52 L58,48 L44,48 Z" />
+</vector>

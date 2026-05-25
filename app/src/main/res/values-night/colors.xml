@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Dark counterpart to splash_background. Matches the Material 3 default
+      dark surface tone so cold launches in dark mode go straight from black-ish
+      splash → black-ish Compose surface with no white flash.
+    -->
+    <color name="splash_background">#FF1C1B1F</color>
+</resources>

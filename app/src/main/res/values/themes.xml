@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+      Base app theme. Parented to Material 3 DayNight so windowBackground and
+      system surfaces auto-switch with system dark mode — Compose's
+      Am2geoTheme then composes on top of an already-correct window.
+    -->
+    <style name="Theme.Am2geo" parent="Theme.Material3.DayNight.NoActionBar" />
+
+    <!--
+      SplashScreen API starting theme (Android 12+ behaviour back-ported to
+      API 23+ via androidx.core:core-splashscreen). The launcher Activity
+      uses this; installSplashScreen() in onCreate hands control to
+      postSplashScreenTheme (= Theme.Am2geo) the moment Compose is ready.
+
+      - windowSplashScreenBackground: opaque colour, no transparency. The
+        @color/splash_background reference resolves per night-mode, so dark
+        users get a dark splash and light users get a light one.
+      - The icon shown on top is the launcher icon (@mipmap/ic_launcher) by
+        default; we don't override windowSplashScreenAnimatedIcon because the
+        launcher icon is what users expect during a cold start.
+    -->
+    <style name="Theme.Am2geo.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="postSplashScreenTheme">@style/Theme.Am2geo</item>
+    </style>
+
+    <style name="Theme.Am2geo.Redirect" parent="android:Theme.Translucent.NoTitleBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+</resources>
